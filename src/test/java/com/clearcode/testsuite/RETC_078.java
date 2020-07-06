@@ -15,7 +15,7 @@ import dataProvider.LoginData;
 public class RETC_078 extends TestSetup{
 		
 	@Test(dataProvider="CreateUser",dataProviderClass=LoginData.class)
-	public void searchPatient(String user, String pwd, String usr, String email, String fname, String lname, String website, String passpwd, String role, String error) throws InterruptedException {
+	public void CreateUser(String user, String pwd, String usr, String email, String fname, String lname, String website, String passpwd, String role, String error) throws InterruptedException {
 		wdu.type(HomePage.username_ip, user);
 		wdu.type(HomePage.pwd_ip, pwd);
 		wdu.click(HomePage.login_btn);

@@ -11,11 +11,13 @@ public class LoginData {
 	}
 	
 	@DataProvider
-	public Object[][] CreatePatient(){
-		return new Object[][] { 
-			new Object[] {
-			ExcelUtils.data("SuiteData.xls", "Sheet1", "createPatient").toArray() }
-			};
+	public Object[][] AddNewFeature(){
+		return new Object[][] { ExcelUtils.data("SuiteData.xls", "Sheet1", "RETC_079").toArray() };
+//		return new Object[][] { 
+			
+//			new Object[] {
+//			ExcelUtils.data("SuiteData.xls", "Sheet1", "RETC_079").toArray() }
+//			}
 	}
 	
 	@DataProvider

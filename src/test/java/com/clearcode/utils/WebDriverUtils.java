@@ -1,5 +1,6 @@
 package com.clearcode.utils;
 
+import java.lang.reflect.Array;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
@@ -25,6 +26,7 @@ import atu.testng.reports.ATUReports;
 import atu.testng.reports.logging.LogAs;
 import atu.testng.selenium.reports.CaptureScreen;
 import atu.testng.selenium.reports.CaptureScreen.ScreenshotOf;
+import dataProvider.LoginData;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WebDriverUtils {
@@ -82,6 +84,16 @@ public class WebDriverUtils {
 			driver.get(url);
 			ATUReports.add("Loaded URL",driver.getCurrentUrl() , LogAs.PASSED, new CaptureScreen(
                     ScreenshotOf.BROWSER_PAGE));
+		}
+		
+		public void refresh() {
+			driver.navigate().refresh();
+//			String url = p.getProperty("url");
+//			ATUReports.add("Launch URL",url, LogAs.INFO, new CaptureScreen(
+//                    ScreenshotOf.BROWSER_PAGE));
+//			driver.get(url);
+//			ATUReports.add("Loaded URL",driver.getCurrentUrl() , LogAs.PASSED, new CaptureScreen(
+//                    ScreenshotOf.BROWSER_PAGE));
 		}
 		
 		public void navigate(String url) {
@@ -247,6 +259,40 @@ public class WebDriverUtils {
 		public void switchOut() {
 			driver.switchTo().defaultContent();
 		}
+		
+		public void tableFetch() {
+			//Finding the row count
+			List<WebElement>TotalRowsList = driver.findElements(By.xpath("//*/table/tbody/tr"));
+			int rowcount = TotalRowsList.size();
+			System.out.println("Total number of Rows in the table are : "+rowcount);
+			
+//			//Finding the collumn count
+//			List<WebElement> TotalColsList = driver.findElements(By.xpath("//*/table/tbody/tr[1]/td"));
+//			int colcount = TotalColsList.size();
+//			System.out.println("Total Number of Columns in the table are: "+colcount);
+			
+			String before_xpath = "//*/table/tbody/tr[";
+			String after_xpath = "]/td[1]/strong/a";
+			String name = "Silly";
+			int Cnt=0;
+						
+			for(int i=1; i<rowcount; i++ ) {
+				String tablevalue = driver.findElement(By.xpath(before_xpath + i + after_xpath)).getText();
+				System.out.println(tablevalue);
+					
+					if(tablevalue.contains(name)) {
+						System.out.println("*****Name found in the table*****");
+						Cnt = Cnt+1;
+						break;
+				}
+					else
+						System.out.println("*****Name NOT found in the table*****");
+						
+			}
+				System.out.println("RETC_079 is PASSED");
+			
+		}
+		
 		
 		public void exit() {
 			try
