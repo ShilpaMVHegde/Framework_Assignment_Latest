@@ -43,35 +43,20 @@
     <line>
       <![CDATA[STEP14]]>
     </line>
-    <line>
-      <![CDATA[STEP15]]>
-    </line>
-    <line>
-      <![CDATA[STEP16]]>
-    </line>
-    <line>
-      <![CDATA[STEP17]]>
-    </line>
-    <line>
-      <![CDATA[STEP18]]>
-    </line>
-    <line>
-      <![CDATA[STEP19]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41957" started-at="2020-07-06T16:25:44 IST" finished-at="2020-07-06T16:26:26 IST">
+  <suite name="Default suite" duration-ms="72469" started-at="2020-07-07T02:06:57 IST" finished-at="2020-07-07T02:08:10 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41957" started-at="2020-07-06T16:25:44 IST" finished-at="2020-07-06T16:26:26 IST">
-      <class name="com.clearcode.testsuite.RETC_078">
-        <test-method status="PASS" signature="launch()[pri:0, instance:com.clearcode.testsuite.RETC_078@d44fc21]" name="launch" is-config="true" duration-ms="8888" started-at="2020-07-06T16:25:44 IST" finished-at="2020-07-06T16:25:53 IST">
+    <test name="Default test" duration-ms="72469" started-at="2020-07-07T02:06:57 IST" finished-at="2020-07-07T02:08:10 IST">
+      <class name="com.clearcode.testsuite.RETC_079">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.clearcode.testsuite.RETC_079@d44fc21]" name="launch" is-config="true" duration-ms="13685" started-at="2020-07-07T02:06:57 IST" finished-at="2020-07-07T02:07:11 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP1]]>
             </line>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method status="PASS" signature="loadUrl()[pri:0, instance:com.clearcode.testsuite.RETC_078@d44fc21]" name="loadUrl" is-config="true" duration-ms="11485" started-at="2020-07-06T16:25:54 IST" finished-at="2020-07-06T16:26:05 IST">
+        <test-method status="PASS" signature="loadUrl()[pri:0, instance:com.clearcode.testsuite.RETC_079@d44fc21]" name="loadUrl" is-config="true" duration-ms="14483" started-at="2020-07-07T02:07:12 IST" finished-at="2020-07-07T02:07:27 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP2]]>
@@ -81,7 +66,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- loadUrl -->
-        <test-method status="PASS" signature="searchPatient(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearcode.testsuite.RETC_078@d44fc21]" name="searchPatient" duration-ms="19340" started-at="2020-07-06T16:26:05 IST" data-provider="CreateUser" finished-at="2020-07-06T16:26:25 IST">
+        <test-method status="PASS" signature="AddNwFeature(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.clearcode.testsuite.RETC_079@d44fc21]" name="AddNwFeature" duration-ms="40277" started-at="2020-07-07T02:07:27 IST" data-provider="AddNewFeature" finished-at="2020-07-07T02:08:07 IST">
           <params>
             <param index="0">
               <value>
@@ -95,42 +80,42 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[SillyLilly]]>
+                <![CDATA[name]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Silly@gmail.com]]>
+                <![CDATA[Silly]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[SillyLilly]]>
+                <![CDATA[1366]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[SillyLilly]]>
+                <![CDATA[ajgfkjadjkL]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[SillyLilly.com]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[SillyLilly123.com]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[agent]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="9">
               <value>
-                <![CDATA[ERROR]]>
+                <![CDATA[]]>
               </value>
             </param>
           </params>
@@ -165,31 +150,16 @@
             <line>
               <![CDATA[STEP13]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- AddNwFeature -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.clearcode.testsuite.RETC_079@d44fc21]" name="close" is-config="true" duration-ms="2781" started-at="2020-07-07T02:08:07 IST" finished-at="2020-07-07T02:08:10 IST">
+          <reporter-output>
             <line>
               <![CDATA[STEP14]]>
             </line>
-            <line>
-              <![CDATA[STEP15]]>
-            </line>
-            <line>
-              <![CDATA[STEP16]]>
-            </line>
-            <line>
-              <![CDATA[STEP17]]>
-            </line>
-            <line>
-              <![CDATA[STEP18]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- searchPatient -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.clearcode.testsuite.RETC_078@d44fc21]" name="close" is-config="true" duration-ms="1385" started-at="2020-07-06T16:26:25 IST" finished-at="2020-07-06T16:26:26 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[STEP19]]>
-            </line>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- com.clearcode.testsuite.RETC_078 -->
+      </class> <!-- com.clearcode.testsuite.RETC_079 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

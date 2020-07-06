@@ -19,11 +19,11 @@ public class RETC_079 extends TestSetup{
 		wdu.click(HomePage.login_btn);
 		wdu.click(UsersLink.properties);
 		wdu.click(UsersLink.features);
-//		wdu.type(FeaturePage.tag_name, tagname);
-//		wdu.type(FeaturePage.tag_slug, tagslug);
-//		wdu.selectByValue(FeaturePage.parent_feature, pfeature);
-//		wdu.type(FeaturePage.desc, descr);
-//		wdu.click(FeaturePage.nw_feature_btn);
+		wdu.type(FeaturePage.tag_name, tagname);
+		wdu.type(FeaturePage.tag_slug, tagslug);
+		wdu.selectByValue(FeaturePage.parent_feature, pfeature);
+		wdu.type(FeaturePage.desc, descr);
+		wdu.click(FeaturePage.nw_feature_btn);
 		wdu.refresh();
 		wdu.tableFetch();
 		
