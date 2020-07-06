@@ -19,7 +19,7 @@ public class LoginData {
 	}
 	
 	@DataProvider
-	public Object[][] SearchPatient(){
-		return new Object[][] { ExcelUtils.data("SuiteData.xls", "Sheet1", "searchPatient").toArray() };
+	public Object[][] CreateUser(){
+		return new Object[][] { ExcelUtils.data("SuiteData.xls", "Sheet1", "RETC_078").toArray() };
 	}
 }

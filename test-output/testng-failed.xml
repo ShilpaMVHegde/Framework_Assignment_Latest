@@ -8,7 +8,7 @@
           <include name="launch"/>
           <include name="close"/>
           <include name="loadUrl"/>
-          <include name="searchPatient"/>
+          <include name="searchPatient" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.clearcode.testsuite.TestSuite1 -->
     </classes>
